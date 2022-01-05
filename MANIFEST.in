@@ -1,0 +1,14 @@
+include tox.ini
+
+graft docs
+graft examples
+graft tests
+
+prune docs/_build
+prune docs/_themes
+
+include src/pyjiminy/py.typed
+include src/pyjiminy/yaml/*.yml
+
+global-exclude *.py[co]
+global-exclude .*env 
